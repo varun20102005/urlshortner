@@ -1,0 +1,145 @@
+2026-11-20 22:59:12,986 | INFO | linkly | CACHE MISS | short_code=invalidcode123
+2026-11-20 22:59:13,320 | WARNING | linkly | URL NOT FOUND | short_code=invalidcode123
+2026-11-20 23:07:02,782 | INFO | linkly | URL CREATED | short_code=D
+2026-11-20 23:07:08,277 | INFO | linkly | URL CREATED | short_code=E
+2026-11-20 23:07:09,181 | INFO | linkly | URL CREATED | short_code=F
+2026-11-20 23:07:09,858 | INFO | linkly | URL CREATED | short_code=G
+2026-11-20 23:07:10,505 | INFO | linkly | URL CREATED | short_code=H
+2026-11-20 23:07:11,121 | WARNING | linkly | RATE LIMIT EXCEEDED | endpoint=/api/shorten | client=127.0.0.1
+2026-11-20 23:07:11,686 | WARNING | linkly | RATE LIMIT EXCEEDED | endpoint=/api/shorten | client=127.0.0.1
+2026-11-20 23:14:29,653 | INFO | linkly | URL CREATED | short_code=R
+2026-11-20 23:14:29,659 | INFO | httpx | HTTP Request: POST http://testserver/api/shorten "HTTP/1.1 201 Created"
+2026-11-20 23:14:29,708 | INFO | linkly | CACHE MISS | short_code=R
+2026-11-20 23:14:29,719 | INFO | linkly | CACHE MISS | short_code=R
+2026-11-20 23:14:29,731 | INFO | linkly | REDIRECT | short_code=R
+2026-11-20 23:14:29,736 | INFO | httpx | HTTP Request: GET http://testserver/R "HTTP/1.1 302 Found"
+2026-11-20 23:14:29,755 | INFO | linkly | CACHE HIT | short_code=R
+2026-11-20 23:14:29,758 | INFO | linkly | REDIRECT | short_code=R
+2026-11-20 23:14:29,758 | INFO | httpx | HTTP Request: GET http://testserver/R "HTTP/1.1 302 Found"
+2026-11-20 23:14:29,787 | INFO | linkly | CACHE HIT | short_code=R
+2026-11-20 23:14:29,787 | INFO | linkly | REDIRECT | short_code=R
+2026-11-20 23:14:29,792 | INFO | httpx | HTTP Request: GET http://testserver/R "HTTP/1.1 302 Found"
+2026-11-20 23:14:29,810 | INFO | linkly | CACHE HIT | short_code=R
+2026-11-20 23:14:29,810 | INFO | linkly | REDIRECT | short_code=R
+2026-11-20 23:14:29,810 | INFO | httpx | HTTP Request: GET http://testserver/R "HTTP/1.1 302 Found"
+2026-11-20 23:14:29,838 | INFO | linkly | CACHE HIT | short_code=R
+2026-11-20 23:14:29,838 | INFO | linkly | REDIRECT | short_code=R
+2026-11-20 23:14:29,838 | INFO | httpx | HTTP Request: GET http://testserver/R "HTTP/1.1 302 Found"
+2026-11-20 23:14:29,857 | INFO | linkly | REDIRECT | short_code=R
+2026-11-20 23:14:29,858 | INFO | httpx | HTTP Request: GET http://testserver/R "HTTP/1.1 302 Found"
+2026-11-20 23:14:29,863 | INFO | linkly | CACHE HIT | short_code=R
+2026-11-20 23:14:29,863 | INFO | linkly | REDIRECT | short_code=R
+2026-11-20 23:14:29,869 | INFO | httpx | HTTP Request: GET http://testserver/R "HTTP/1.1 302 Found"
+2026-11-20 23:14:29,871 | INFO | linkly | CACHE HIT | short_code=R
+2026-11-20 23:14:29,871 | INFO | linkly | REDIRECT | short_code=R
+2026-11-20 23:14:29,876 | INFO | httpx | HTTP Request: GET http://testserver/R "HTTP/1.1 302 Found"
+2026-11-20 23:14:29,892 | INFO | linkly | CACHE HIT | short_code=R
+2026-11-20 23:14:29,892 | INFO | linkly | REDIRECT | short_code=R
+2026-11-20 23:14:29,892 | INFO | httpx | HTTP Request: GET http://testserver/R "HTTP/1.1 302 Found"
+2026-11-20 23:14:29,909 | INFO | linkly | CACHE HIT | short_code=R
+2026-11-20 23:14:29,909 | INFO | linkly | REDIRECT | short_code=R
+2026-11-20 23:14:29,916 | INFO | httpx | HTTP Request: GET http://testserver/R "HTTP/1.1 302 Found"
+2026-11-20 23:14:29,958 | INFO | linkly | CACHE MISS | short_code=doesnotexist123
+2026-11-20 23:14:29,963 | WARNING | linkly | URL NOT FOUND | short_code=doesnotexist123
+2026-11-20 23:14:29,965 | INFO | httpx | HTTP Request: GET http://testserver/doesnotexist123 "HTTP/1.1 404 Not Found"
+2026-11-20 23:14:30,001 | WARNING | linkly | URL NOT FOUND FOR DELETION | short_code=doesnotexist123
+2026-11-20 23:14:30,001 | INFO | httpx | HTTP Request: DELETE http://testserver/api/urls/doesnotexist123 "HTTP/1.1 404 Not Found"
+2026-11-20 23:14:30,044 | INFO | linkly | URL CREATED | short_code=S
+2026-11-20 23:14:30,045 | INFO | httpx | HTTP Request: POST http://testserver/api/shorten "HTTP/1.1 201 Created"
+2026-11-20 23:14:30,078 | INFO | httpx | HTTP Request: POST http://testserver/api/shorten "HTTP/1.1 422 Unprocessable Entity"
+2026-11-20 23:14:30,105 | INFO | httpx | HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2026-11-20 23:14:30,140 | INFO | linkly | URL CREATED | short_code=T
+2026-11-20 23:14:30,142 | INFO | httpx | HTTP Request: POST http://testserver/api/shorten "HTTP/1.1 201 Created"
+2026-11-20 23:14:30,177 | INFO | httpx | HTTP Request: POST http://testserver/api/shorten "HTTP/1.1 422 Unprocessable Entity"
+2026-11-20 23:14:30,218 | INFO | linkly | URL CREATED | short_code=U
+2026-11-20 23:14:30,218 | INFO | httpx | HTTP Request: POST http://testserver/api/shorten "HTTP/1.1 201 Created"
+2026-11-20 23:14:30,230 | INFO | linkly | CACHE MISS | short_code=U
+2026-11-20 23:14:30,237 | INFO | linkly | REDIRECT | short_code=U
+2026-11-20 23:14:30,237 | INFO | httpx | HTTP Request: GET http://testserver/U "HTTP/1.1 302 Found"
+2026-11-20 23:14:30,279 | INFO | linkly | URL CREATED | short_code=V
+2026-11-20 23:14:30,281 | INFO | httpx | HTTP Request: POST http://testserver/api/shorten "HTTP/1.1 201 Created"
+2026-11-20 23:14:30,291 | INFO | linkly | CACHE MISS | short_code=V
+2026-11-20 23:14:30,297 | INFO | linkly | REDIRECT | short_code=V
+2026-11-20 23:14:30,299 | INFO | httpx | HTTP Request: GET http://testserver/V "HTTP/1.1 302 Found"
+2026-11-20 23:14:30,311 | INFO | httpx | HTTP Request: GET http://testserver/api/analytics/V "HTTP/1.1 200 OK"
+2026-11-20 23:14:30,359 | INFO | linkly | URL CREATED | short_code=W
+2026-11-20 23:14:30,363 | INFO | httpx | HTTP Request: POST http://testserver/api/shorten "HTTP/1.1 201 Created"
+2026-11-20 23:14:30,377 | INFO | linkly | URL DELETED | short_code=W
+2026-11-20 23:14:30,377 | INFO | httpx | HTTP Request: DELETE http://testserver/api/urls/W "HTTP/1.1 200 OK"
+2026-11-20 23:14:30,390 | INFO | linkly | CACHE MISS | short_code=W
+2026-11-20 23:14:30,394 | WARNING | linkly | URL NOT FOUND | short_code=W
+2026-11-20 23:14:30,395 | INFO | httpx | HTTP Request: GET http://testserver/W "HTTP/1.1 404 Not Found"
+2026-11-20 23:14:30,438 | INFO | httpx | HTTP Request: POST http://testserver/api/shorten "HTTP/1.1 422 Unprocessable Entity"
+2026-11-20 23:14:30,752 | INFO | httpx | HTTP Request: POST http://testserver/api/shorten "HTTP/1.1 422 Unprocessable Entity"
+2026-11-20 23:14:30,778 | INFO | linkly | CACHE MISS | short_code=nonexistentcode
+2026-11-20 23:14:30,780 | WARNING | linkly | URL NOT FOUND | short_code=nonexistentcode
+2026-11-20 23:14:30,785 | INFO | httpx | HTTP Request: GET http://testserver/nonexistentcode "HTTP/1.1 404 Not Found"
+2026-11-20 23:16:54,099 | INFO | httpx | HTTP Request: POST http://testserver/api/shorten "HTTP/1.1 422 Unprocessable Entity"
+2026-11-20 23:18:20,741 | INFO | linkly | URL CREATED | short_code=X
+2026-11-20 23:18:20,748 | INFO | httpx | HTTP Request: POST http://testserver/api/shorten "HTTP/1.1 201 Created"
+2026-11-20 23:18:20,773 | INFO | linkly | CACHE MISS | short_code=X
+2026-11-20 23:18:20,781 | INFO | linkly | CACHE MISS | short_code=X
+2026-11-20 23:18:20,791 | INFO | linkly | REDIRECT | short_code=X
+2026-11-20 23:18:20,793 | INFO | httpx | HTTP Request: GET http://testserver/X "HTTP/1.1 302 Found"
+2026-11-20 23:18:20,803 | INFO | linkly | CACHE HIT | short_code=X
+2026-11-20 23:18:20,803 | INFO | linkly | REDIRECT | short_code=X
+2026-11-20 23:18:20,803 | INFO | httpx | HTTP Request: GET http://testserver/X "HTTP/1.1 302 Found"
+2026-11-20 23:18:20,817 | INFO | linkly | CACHE HIT | short_code=X
+2026-11-20 23:18:20,817 | INFO | linkly | REDIRECT | short_code=X
+2026-11-20 23:18:20,824 | INFO | httpx | HTTP Request: GET http://testserver/X "HTTP/1.1 302 Found"
+2026-11-20 23:18:20,827 | INFO | linkly | CACHE HIT | short_code=X
+2026-11-20 23:18:20,827 | INFO | linkly | REDIRECT | short_code=X
+2026-11-20 23:18:20,827 | INFO | httpx | HTTP Request: GET http://testserver/X "HTTP/1.1 302 Found"
+2026-11-20 23:18:20,854 | INFO | linkly | CACHE HIT | short_code=X
+2026-11-20 23:18:20,854 | INFO | linkly | REDIRECT | short_code=X
+2026-11-20 23:18:20,858 | INFO | httpx | HTTP Request: GET http://testserver/X "HTTP/1.1 302 Found"
+2026-11-20 23:18:20,862 | INFO | linkly | REDIRECT | short_code=X
+2026-11-20 23:18:20,866 | INFO | httpx | HTTP Request: GET http://testserver/X "HTTP/1.1 302 Found"
+2026-11-20 23:18:20,886 | INFO | linkly | CACHE HIT | short_code=X
+2026-11-20 23:18:20,886 | INFO | linkly | REDIRECT | short_code=X
+2026-11-20 23:18:20,886 | INFO | httpx | HTTP Request: GET http://testserver/X "HTTP/1.1 302 Found"
+2026-11-20 23:18:20,894 | INFO | linkly | CACHE HIT | short_code=X
+2026-11-20 23:18:20,894 | INFO | linkly | REDIRECT | short_code=X
+2026-11-20 23:18:20,896 | INFO | httpx | HTTP Request: GET http://testserver/X "HTTP/1.1 302 Found"
+2026-11-20 23:18:20,926 | INFO | linkly | CACHE HIT | short_code=X
+2026-11-20 23:18:20,926 | INFO | linkly | REDIRECT | short_code=X
+2026-11-20 23:18:20,928 | INFO | httpx | HTTP Request: GET http://testserver/X "HTTP/1.1 302 Found"
+2026-11-20 23:18:20,961 | INFO | linkly | CACHE HIT | short_code=X
+2026-11-20 23:18:20,961 | INFO | linkly | REDIRECT | short_code=X
+2026-11-20 23:18:20,963 | INFO | httpx | HTTP Request: GET http://testserver/X "HTTP/1.1 302 Found"
+2026-11-20 23:18:20,996 | INFO | linkly | CACHE MISS | short_code=doesnotexist123
+2026-11-20 23:18:20,999 | WARNING | linkly | URL NOT FOUND | short_code=doesnotexist123
+2026-11-20 23:18:21,002 | INFO | httpx | HTTP Request: GET http://testserver/doesnotexist123 "HTTP/1.1 404 Not Found"
+2026-11-20 23:18:21,026 | WARNING | linkly | URL NOT FOUND FOR DELETION | short_code=doesnotexist123
+2026-11-20 23:18:21,028 | INFO | httpx | HTTP Request: DELETE http://testserver/api/urls/doesnotexist123 "HTTP/1.1 404 Not Found"
+2026-11-20 23:18:21,055 | INFO | linkly | URL CREATED | short_code=Y
+2026-11-20 23:18:21,059 | INFO | httpx | HTTP Request: POST http://testserver/api/shorten "HTTP/1.1 201 Created"
+2026-11-20 23:18:21,081 | INFO | httpx | HTTP Request: POST http://testserver/api/shorten "HTTP/1.1 422 Unprocessable Entity"
+2026-11-20 23:18:21,102 | INFO | httpx | HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2026-11-20 23:18:21,132 | INFO | linkly | URL CREATED | short_code=Z
+2026-11-20 23:18:21,133 | INFO | httpx | HTTP Request: POST http://testserver/api/shorten "HTTP/1.1 201 Created"
+2026-11-20 23:18:21,156 | INFO | httpx | HTTP Request: POST http://testserver/api/shorten "HTTP/1.1 422 Unprocessable Entity"
+2026-11-20 23:18:21,185 | INFO | linkly | URL CREATED | short_code=10
+2026-11-20 23:18:21,185 | INFO | httpx | HTTP Request: POST http://testserver/api/shorten "HTTP/1.1 201 Created"
+2026-11-20 23:18:21,192 | INFO | linkly | CACHE MISS | short_code=10
+2026-11-20 23:18:21,199 | INFO | linkly | REDIRECT | short_code=10
+2026-11-20 23:18:21,199 | INFO | httpx | HTTP Request: GET http://testserver/10 "HTTP/1.1 302 Found"
+2026-11-20 23:18:21,230 | INFO | linkly | URL CREATED | short_code=11
+2026-11-20 23:18:21,233 | INFO | httpx | HTTP Request: POST http://testserver/api/shorten "HTTP/1.1 201 Created"
+2026-11-20 23:18:21,238 | INFO | linkly | CACHE MISS | short_code=11
+2026-11-20 23:18:21,242 | INFO | linkly | REDIRECT | short_code=11
+2026-11-20 23:18:21,245 | INFO | httpx | HTTP Request: GET http://testserver/11 "HTTP/1.1 302 Found"
+2026-11-20 23:18:21,254 | INFO | httpx | HTTP Request: GET http://testserver/api/analytics/11 "HTTP/1.1 200 OK"
+2026-11-20 23:18:21,287 | INFO | linkly | URL CREATED | short_code=12
+2026-11-20 23:18:21,287 | INFO | httpx | HTTP Request: POST http://testserver/api/shorten "HTTP/1.1 201 Created"
+2026-11-20 23:18:21,299 | INFO | linkly | URL DELETED | short_code=12
+2026-11-20 23:18:21,302 | INFO | httpx | HTTP Request: DELETE http://testserver/api/urls/12 "HTTP/1.1 200 OK"
+2026-11-20 23:18:21,309 | INFO | linkly | CACHE MISS | short_code=12
+2026-11-20 23:18:21,312 | WARNING | linkly | URL NOT FOUND | short_code=12
+2026-11-20 23:18:21,314 | INFO | httpx | HTTP Request: GET http://testserver/12 "HTTP/1.1 404 Not Found"
+2026-11-20 23:18:21,346 | INFO | linkly | URL CREATED | short_code=13
+2026-11-20 23:18:21,346 | INFO | httpx | HTTP Request: POST http://testserver/api/shorten "HTTP/1.1 201 Created"
+2026-11-20 23:18:21,372 | INFO | httpx | HTTP Request: POST http://testserver/api/shorten "HTTP/1.1 422 Unprocessable Entity"
+2026-11-20 23:18:21,393 | INFO | linkly | CACHE MISS | short_code=nonexistentcode
+2026-11-20 23:18:21,393 | WARNING | linkly | URL NOT FOUND | short_code=nonexistentcode
+2026-11-20 23:18:21,400 | INFO | httpx | HTTP Request: GET http://testserver/nonexistentcode "HTTP/1.1 404 Not Found"

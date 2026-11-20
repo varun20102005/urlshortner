@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkly — URL Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">↗</div>
+                <span>linkly</span>
+            </div>
+
+            <nav>
+                <a href="#" class="nav-item active">
+                    <span>▦</span> Dashboard
+                </a>
+                <a href="#links" class="nav-item">
+                    <span>↗</span> My Links
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="profile">
+                    <div class="avatar">U</div>
+                    <div>
+                        <strong>Developer</strong>
+                        <small>Free account</small>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main content -->
+        <main class="main-content">
+
+            <header class="topbar">
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Manage and track your shortened links.</p>
+                </div>
+
+                <div class="topbar-badge">
+                    URL Shortener
+                </div>
+            </header>
+
+            <!-- URL Creation -->
+            <section class="create-card">
+                <div class="section-heading">
+                    <h2>Shorten a URL</h2>
+                    <p>Turn a long link into something simple.</p>
+                </div>
+
+                <form id="shorten-form">
+                    <div class="input-wrapper">
+                        <span class="input-icon">↗</span>
+
+                        <input
+                            type="url"
+                            id="url-input"
+                            placeholder="https://your-very-long-url.com..."
+                            required
+                        >
+                    </div>
+
+                    <button type="submit" id="shorten-btn">
+                        Shorten URL <span>→</span>
+                    </button>
+                </form>
+
+                <p id="form-message"></p>
+            </section>
+
+            <!-- Statistics -->
+            <section class="stats-grid">
+
+                <div class="stat-card">
+                    <div class="stat-label">
+                        <span>Total Links</span>
+                        <span class="stat-icon">↗</span>
+                    </div>
+
+                    <h2 id="total-links">0</h2>
+                    <p>Links created</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-label">
+                        <span>Total Clicks</span>
+                        <span class="stat-icon">⌁</span>
+                    </div>
+
+                    <h2 id="total-clicks">0</h2>
+                    <p>Across all links</p>
+                </div>
+
+            </section>
+
+            <!-- Analytics Chart -->
+            <section class="analytics-card">
+
+                <div class="analytics-header">
+                    <div>
+                        <h2>Top links by clicks</h2>
+                        <p>Click distribution across your shortened URLs.</p>
+                    </div>
+                </div>
+
+                <div id="click-chart" class="click-chart">
+                    <p class="chart-empty">
+                        Loading analytics...
+                    </p>
+                </div>
+
+            </section>
+
+            <!-- URL Table -->
+            <section class="links-section" id="links">
+
+                <div class="links-header">
+
+                    <div>
+                        <h2>Your links</h2>
+                        <p>Manage all your shortened URLs.</p>
+                    </div>
+
+                    <div class="links-toolbar">
+
+                        <input
+                            type="search"
+                            id="search-input"
+                            placeholder="Search links..."
+                        >
+
+                        <button
+                            class="refresh-btn"
+                            id="refresh-btn"
+                        >
+                            ↻ Refresh
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Table -->
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Short URL</th>
+                                <th>Original URL</th>
+                                <th>Clicks</th>
+                                <th>Expiration</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="urls-table">
+                            <tr>
+                                <td colspan="5" class="empty-state">
+                                    Your links will appear here.
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                Linkly <span>•</span> Built with FastAPI
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+</html>

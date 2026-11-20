@@ -37,6 +37,6 @@ class URL(Base):
         nullable=False
     )
     expires_at: Mapped[datetime | None] = mapped_column(
-    DateTime,
+    DateTime(timezone=True),
     nullable=True
     )

@@ -74,6 +74,14 @@ class URLDetailResponse(BaseModel):
     }
 
 
+# Response for displaying URLs in the dashboard
+class URLDashboardItem(BaseModel):
+    short_code: str
+    original_url: str
+    total_clicks: int
+    created_at: datetime
+    expires_at: datetime | None = None
+
 # Response containing URL analytics
 class URLAnalyticsResponse(BaseModel):
     short_code: str
